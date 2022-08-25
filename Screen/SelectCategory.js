@@ -42,7 +42,7 @@ const SelectCategory = ({navigation}) => {
           Select Category
         </Text>
       </View>
-      <View style={{width:343,height:85,top:50,backgroundColor:'#F3F3F3',borderRadius:20,left:18}}>
+      <View style={{width:343,height:85,top:50,backgroundColor:'#F2EBFF',borderRadius:20,left:18}}>
         <Image source={require('../Images/male.png')} style={{borderRadius:20,position:'absolute',left:8,top:10}} />
         <Text style={{position:'absolute',fontSize:16,fontWeight:'510',color:'#161616',left:90,top:15,}}>Tailor for Men</Text>
         <Text style={{position:'absolute',fontSize:14,fontWeight:'400',color:'#757575',left:90,top:40}}>₹999 onwards</Text>
@@ -59,7 +59,7 @@ const SelectCategory = ({navigation}) => {
           </View>
         </TouchableOpacity>
       </View>
-      <View style={{width:343,height:85,top:80,backgroundColor:'#F3F3F3',borderRadius:20,left:18}}>
+      <View style={{width:343,height:85,top:80,backgroundColor:'#F2EBFF',borderRadius:20,left:18}}>
         <Image source={require('../Images/female.png')} style={{borderRadius:20,position:'absolute',left:8,top:10}} />
         <Text style={{position:'absolute',fontSize:16,fontWeight:'510',color:'#161616',left:90,top:15}}>Tailor for Women</Text>
         <Text style={{position:'absolute',fontSize:14,fontWeight:'400',color:'#757575',left:90,top:40}}>₹1299 onwards</Text>

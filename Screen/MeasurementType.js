@@ -4,7 +4,7 @@ import Left from 'react-native-vector-icons/AntDesign';
 import Right from 'react-native-vector-icons/AntDesign';
 import Tseart from 'react-native-vector-icons/MaterialCommunityIcons';
 import Scale from 'react-native-vector-icons/FontAwesome5';
-import FitMessege from './FitMessege';
+// import FitMessege from './FitMessege';
 
 const MeasurementType= ({ visible, closeCallback, shareOptionCallback,navigation}) => {
   const [Popup, setPopup] = useState(false);
@@ -43,7 +43,7 @@ const MeasurementType= ({ visible, closeCallback, shareOptionCallback,navigation
           width: 343,
           height: 85,
           top: 50,
-          backgroundColor: '#F3F3F3',
+          backgroundColor: '#F2EBFF',
           borderRadius: 20,
           left: 18,
         }}>
@@ -105,7 +105,7 @@ const MeasurementType= ({ visible, closeCallback, shareOptionCallback,navigation
           width: 343,
           height: 85,
           top: 80,
-          backgroundColor: '#F3F3F3',
+          backgroundColor: '#F2EBFF',
           borderRadius: 20,
           left: 18,
         }}>
@@ -149,7 +149,7 @@ const MeasurementType= ({ visible, closeCallback, shareOptionCallback,navigation
           }}>
           select a preferred pre-set size
         </Text>
-        <TouchableOpacity style={{top: 25, left: 110, alignSelf: 'center'}}>
+        <TouchableOpacity onPress={() => setModalVisible(true)} style={{top: 25, left: 110, alignSelf: 'center'}}>
           <View
             style={{
               position: 'absolute',
@@ -178,7 +178,7 @@ const MeasurementType= ({ visible, closeCallback, shareOptionCallback,navigation
             <Text style={styles.modalText}>Be ready with your best fit material    to provide our executive</Text>
             <Pressable
               style={[styles.button, styles.buttonClose]}
-              onPress={() => setModalVisible(!modalVisible)}
+              onPress={() => navigation.navigate("NotchLapel")}
             >
               <Text style={styles.textStyle}>Okay</Text>
             </Pressable>
@@ -234,6 +234,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontWeight: "bold",
     textAlign: "center",
+    top:5
   },
   modalText: {
     textAlign: "center",
